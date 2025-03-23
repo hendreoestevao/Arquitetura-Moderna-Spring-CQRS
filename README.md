@@ -36,7 +36,7 @@
 - Replicação de dados entre bancos de dados usando microservices.
 
 ## 🚀 Tecnologias Utilizadas
-- **Java 21**
+- **Java 17**
 - **Spring Boot**
 - **RabbitMQ**
 - **Docker & Docker Compose**
