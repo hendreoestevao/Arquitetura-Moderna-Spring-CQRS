@@ -1,12 +1,12 @@
 package br.com.beautique.api.entities;
 
 
-import jakarta.persistence.Column;
-import jakarta.persistence.Entity;
-import jakarta.persistence.Table;
+import com.fasterxml.jackson.annotation.JsonIgnore;
+import jakarta.persistence.*;
 import lombok.*;
 
 import java.math.BigDecimal;
+import java.util.List;
 
 @Getter
 @Setter
@@ -25,4 +25,11 @@ public class BeautyProceduresEntity extends BaseEntity {
 
     @Column(nullable = false)
     private BigDecimal price;
+
+    @JsonIgnore
+    @OneToMany(mappedBy = "beautyProcedures", cascade = CascadeType.ALL, orphanRemoval = true)
+    @ToString.Exclude
+    @EqualsAndHashCode.Exclude
+    private List<AppointmentsEntity> appointments;
+
 }
