@@ -19,6 +19,9 @@ public class CustomerEntity  extends  BaseEntity {
     private String name;
 
     @Column(nullable = false, length =  100)
+    private String email;
+
+    @Column(nullable = false, length =  100)
     private String phone;
 
     @JsonIgnore
