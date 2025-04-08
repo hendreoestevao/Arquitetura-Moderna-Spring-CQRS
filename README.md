@@ -41,7 +41,7 @@
 - **RabbitMQ**
 - **Docker & Docker Compose**
 - **PostgreSQL & MongoDB**
-- **Swagger & Postman**
+- **Postman**
 
 ## 📜 Pré-requisitos
 Antes de começar, certifique-se de ter os seguintes itens instalados em seu ambiente de desenvolvimento:
@@ -66,11 +66,9 @@ Antes de começar, certifique-se de ter os seguintes itens instalados em seu amb
    ```sh
    mvn spring-boot:run
    ```
-4. Acesse a API via Swagger UI:
-   ```sh
-   http://localhost:8080/swagger-ui/
-   ```
 
+
+![alt text](image.png)
 ## 🤝 Contribuição
 Contribuições são bem-vindas! Sinta-se à vontade para abrir issues e pull requests.
 
